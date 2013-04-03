@@ -1,0 +1,17 @@
+
+
+ Joueur(Bob):
+   idJoueur: 1
+   email: bob@gmail.com
+   password: secret
+   fullname: Bob
+   isAdmin: true
+   
+ Joueur(Coco):
+   idJoueur: 2
+   email: coco@gmail.com
+   password: secret
+   fullname: coco
+   isAdmin: false
+
+   

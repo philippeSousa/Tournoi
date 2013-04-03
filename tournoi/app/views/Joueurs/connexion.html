@@ -1,0 +1,41 @@
+<head>
+		<title>Connexion</title>	
+		<meta http-equiv="Content-Type" content="text/html; charset=${_response_encoding}"/>
+        #{get 'moreStyles' /}
+        <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/main.css'}" />
+        <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}" />
+        <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}"></script>
+	</head>
+	<body>
+		<div id="main">
+    	<h1>Login joueur</h1>
+   	#{form @Application.VerifConnexion()}
+	<table  width="100%" cellpadding="10px">		
+		<tr>
+			<td>
+				<label for="login">login :</label>
+			</td>
+			<td>
+				<input type="text" name="fullname" id="email"  />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="mdp">Mots de passe :</label>		
+			</td>
+			<td>
+				<input type="password" name="password" id="pwd"  />
+			</td>		 
+		</tr>	
+		<tr>
+			<td>				 		
+			</td>
+			<td>
+				<input type="submit" size="10px" name="submit" />	
+			</td>		 
+		</tr>			  
+	</table>
+#{/form}
+</div>
+</body>
+</html>

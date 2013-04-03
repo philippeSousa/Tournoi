@@ -1,0 +1,49 @@
+# You can specialize this file for each language.
+# For example, for French create a messages.fr file
+#
+# Default CRUD messages
+# ~~~~~~
+
+crud.title=Administration
+crud.home=Accueil
+crud.blank=Nouveau
+crud.index.title=Choose the object to edit
+crud.index.objectType=Type de l'objet
+crud.index.action=
+crud.index.add=Ajouter
+crud.add=Ajouter &{%s}
+crud.list.title=&{%s}
+crud.list.size=%d &{%s}
+crud.list.totalSize=%d total
+crud.pagination.previous=« Précédent
+crud.pagination.next=Suivant »
+crud.pagination.last=Dernier »»
+crud.pagination.first=«« Premier
+crud.show.title=Editer &{%s}
+crud.save=Sauvegarder
+crud.saveAndContinue=Sauvegarder et continuer
+crud.cancel=Annuler
+crud.hasErrors=Veuillez corriger les erreurs s'il vous plait
+crud.blank.title=Ajouter &{%s}
+crud.saveAndAddAnother=Sauvegarder et creer un autre
+crud.delete=Supprimer &{%s}
+crud.created= &{%s} a ete cree
+crud.saved= &{%s} a ete sauvegarde
+crud.deleted= &{%s} a ete supprime
+crud.delete.error=On ne peut pas supprimer l'objet
+crud.search=Rechercher
+crud.none=Aucun
+crud.selectValue=(Veuillez selectionner une valeur)
+
+crud.help.required=Requis.
+crud.help.minlength=La taille minimale est de is %d.
+crud.help.maxlength=La taille maximale est de %d.
+crud.help.email=Adresse email valide.
+crud.help.dateformat=&{%s} format.
+crud.help.numeric=Numerique.
+crud.help.min=Doit etre supérieur à %d.
+crud.help.future=Dans le futur.
+crud.help.past=Dans le passé.
+crud.help.after=Après %s.
+crud.help.before=Avant %s.
+crud.help.range=Entre %d et %d

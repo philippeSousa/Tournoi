@@ -1,0 +1,50 @@
+<html>
+<head>
+		<title>Création Tournoi</title>	
+		<meta http-equiv="Content-Type" content="text/html; charset=${_response_encoding}"/>
+        #{get 'moreStyles' /}
+        <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/main.css'}" />
+        <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}" />
+        <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}"></script>
+	</head>
+
+<body>
+
+#{form @Application.addTournoi()}
+#{ifErrors}
+<p class="error">
+	${errors[0]}
+</p>
+	#{/ifErrors}
+
+<p>
+<label>Nom du tournoi:</label>
+<input type="text" name="name" id="nom">
+</p>
+
+<p>
+<label>description</label>
+<input type="text" name="desc">
+</p>
+
+<p>
+<label>nombre d'equipes</label>
+<input type="number" name="nbEquipe">
+</p>
+
+
+
+<p>
+<label>type de tournoi:</label><br>
+avec phase de poule:<input type="radio" name="type" value="elimination directe" checked>
+sans phase de poule:<input type="radio" name="type" value="phase de poule">
+</p>
+
+<p>
+<input type="submit" value="Creer" />
+</p>
+#{/form}
+
+</body>
+
+</html>

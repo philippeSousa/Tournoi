@@ -1,0 +1,6 @@
+# Application dependencies
+
+require:
+    - play
+	- play -> fbgraph-0.6
+		transitive: false

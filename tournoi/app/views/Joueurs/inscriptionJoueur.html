@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>Inscription Joueur</title>	
+		<meta http-equiv="Content-Type" content="text/html; charset=${_response_encoding}"/>
+        #{get 'moreStyles' /}
+        <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/main.css'}" />
+        <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}" />
+        <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}"></script>
+	</head>
+	<body>
+		
+		<div id="main">
+			
+			#{if flash.success}
+				<p class="success">${flash.success}</p>
+			#{/if}
+			<h3> Inscription </h3>
+			#{form @Application.addJoueur()}
+				#{ifErrors}
+					<p class="error">
+						${errors[0]}
+					</p>
+				#{/ifErrors}
+				<p>
+					<label for="nom">Nom :</label>
+					<input type="text" name="name" id="nom" />
+				</p>
+				<p>
+					<label for="content">Adresse E-mail: </label>
+					<input type="text" name="email" id="email"></textarea>
+				</p>
+				<p>
+					<label for="content">Mot de passe: </label>
+					<input type=password name="password" id="password"></textarea>
+				</p>
+				<p>
+					<label for="content">confirmer le mot de passe: </label>
+					<input type=password name="password2" id="password"></textarea>
+				</p>
+				 <p>
+					<label for="code">Captcha: </label>
+					<img src="@{Application.captcha(randomID)}" />
+					<br />
+					<input type="text" name="code" id="code" size="18" value="" />
+					<input type="hidden" name="randomID" value="${randomID}" />
+				</p>
+				<p>
+					<input type="submit" value="Envoyer" />
+				</p>
+			#{/form}
+		</div>
+	</body>
+</html>
